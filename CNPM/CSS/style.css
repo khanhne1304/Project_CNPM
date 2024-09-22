@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Resource/image/background_login.jpg") no-repeat center center;
+    background-size: cover;
+ }
+ 
+.wrapper{
+    width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0,0,.2);
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #129745;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid black; 
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #000;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper .rememer-forgot{
+    display: flex;
+    justify-content:  space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.rememer-forgot label input{
+    accent-color: #000;
+    margin-right: 3px;
+}
+
+.rememer-forgot a,
+.register-link a {
+    cursor: pointer;
+}
+
+
+.rememer-forgot a{
+    color: #000;
+    text-decoration: none;
+}
+.rememer-forgot a:hover{
+    text-decoration: underline;
+}
+.hints {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000; 
+}
+
+.hints ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.hints li {
+    margin-bottom: 5px;
+}
+
+.wrapper .button{
+    width: 100%;
+    height: 45px;
+    background: #129745;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .5);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wrapper .register-link{
+    font-size: 14.5;
+    text-align: center
+}
+.register-link p a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.social-button {
+    background-color: #3b5998; /* Màu của Facebook */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; /* Căn giữa biểu tượng và văn bản */
+}
+
+.social-button#google {
+    background-color: #db4437; /* Màu của Google */
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
